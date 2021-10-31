@@ -1,0 +1,247 @@
+﻿/* HTML теги */
+a /* Все ссылки на странице */ {
+	color: black;  /* Цвет ссылок */
+	text-decoration: none;  /* Подчёркивание */
+	font-size: 18px;  /* Размер ссылок */
+}
+
+body /* Для всех элементов в <body> */ {
+	margin: 0; /* Отступы */
+	font-family: 'Roboto', sans-serif;  /* Шрифт */
+	line-height: 1.05; /* Расстояние между строками */
+	color: black; /* Цвет текста */
+}
+
+* /* Для всех элементов страницы */ {
+	box-sizing: border-box;  /* Алгоритм задания границ элемента */
+}
+
+button {
+	background-color: white;
+	border: none;
+	display: inline-block;
+}
+
+audio {
+	float: right;
+}
+
+table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	text-align: left;
+	background: rgba(255,255,255, 0.1);
+	border-collapse: collapse;
+}
+
+th {
+	font-weight: normal;
+	color: white;
+	border-bottom: 2px solid #6678b1;
+	padding: 10px 8px;
+}
+
+td {
+	border-bottom: 1px solid #ccc;
+	color: white;
+	padding: 9px 8px;
+	transition: 0.3s linear;
+}
+tr:hover td {
+	color: rgb(180, 180, 180);
+}
+
+footer {
+	margin: 0;
+	height: 20px;
+	width: 100vw;
+	background-color: #FFFFFF;
+	border: 2px solid #EBEBEB;
+	border-top-width: 100%;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+	clear: both;
+	bottom: 0;
+	left: 0;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+h5 {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+/* Классы */
+/* Название металла на страницах */
+.FirstH1 {
+	margin: 0;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+/* Главное меню (Вверняя часть страницы) */
+.Header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	width: 100%;
+	height: 60px;
+	background-color: #FFFFFF;
+	align-items: center;
+	display: flex;
+	border: 2px solid #EBEBEB;
+	border-top-width: none;
+	border-bottom: 100%;
+	border-right: none;
+	border-left: none;
+}
+/* Логотип (Вверняя левая часть страницы) */
+.HeaderLogo {
+	position: relative;
+	padding-left: 10px;
+	font-family: 'Bebas Neue';
+	font-size: 30px;
+	font-weight: bold;  /* Полужирный текст */
+	color: black;
+	text-align: center;
+	cursor: pointer;
+}
+/* Пункты главного меню (Вверняя часть страницы) */
+.HeaderNav {
+	padding-left: 10px;	
+	font-size: 20px;
+	text-transform: uppercase;
+	vertical-align: top;
+	word-spacing: 15px;
+}
+/* Ссылки в навигаторе (Вверняя часть страницы) */
+.NavA {
+	color: black;
+	padding-bottom: 2.5px;
+	border-bottom: 0px solid rgba(0,0,0,0);
+	transition: border-bottom 0.4s linear;
+	transition: padding-bottom 0.05s linear;
+}
+.NavA:hover /* Событие наведения */ {
+    padding-bottom: 4.5px;
+    border-bottom: 2px solid #4d4d4d;
+    transition: border-bottom 0.2s linear;
+    transition: padding-bottom 0.05s linear;
+}
+/* Изображение металла на его странице */
+.PictureOfMetal {
+	width: 60%;
+	border: 2px solid #EBEBEB;
+}
+.Reader {
+	width: 44%;
+	margin-right: 28%;
+	margin-left: 28%;
+}
+/* Описание металла */
+.List {
+	margin-left: 5px;
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.AdLeft {
+	height: 100vh;
+	width: 28%;
+	float: left;
+}
+.AdRight {
+	height: 100vh;
+	width: 28%;
+	float: right;
+}
+.AdPicture {
+	max-width: 468px;
+	max-height: 100px;
+}
+.Email {
+	float: right;
+	margin: 5px 30px 10px 0;
+}
+.EmailInput {
+	display: inline-block;
+}
+.ButtonFooter {
+  color: #fff;
+  text-decoration: none;
+  user-select: none; /* выделение текста */
+  background: rgb(212,75,56);
+  padding: 0.7em 1.5em;
+  outline: none; /* контур */
+  transition: background 0.3s;
+} 
+.ButtonFooter:hover { 
+	background: rgb(232,95,76);
+	transition: background 0.3s;
+} /* при наведении курсора мышки */
+.ButtonFooter:active { 
+	background: rgb(152,15,0);
+} /* при нажатии */
+
+/* Элементы */
+/* Заголовок на странице описания */
+#MainTegLine {
+	margin-top: 0;
+	color: white;
+	font-weight: bold;
+	font-size: 64px;
+	text-align: center;
+}
+/* Карта сслылок на главной странице */
+#ElementsThumbNail {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+/* Таблица */
+#Table {
+	width: 100%;
+	height: 58vh;
+}
+/* Изоражение на фоне главной страницы */
+#MainPicture {
+	width: 100%;
+	height: 75vh;
+	background-image: url("Pictures/Elements/Background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	align-items: center;
+}
+#MainVideo {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#Video {
+	background-color: #FAFAFA;
+	border: 2px solid #EBEBEB;
+	border-top-width: 100%;
+	border-bottom: none;
+	border-right: none;
+	border-left: none;
+}
+#MapOne {
+	background-color: #FAFAFA;
+	border: 2px solid #EBEBEB;
+	border-top-width: none;
+	border-bottom: 100%;
+	border-right: none;
+	border-left: none;
+}

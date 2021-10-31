@@ -1,0 +1,57 @@
+﻿<DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Самые тугоплавкие металлы</title>
+	<link href="Style.css" rel="stylesheet" type="text/css"> </head>
+
+<body>
+	<!-- Главное меню (Вверняя часть страницы) -->
+	<div class="Header">
+		<a class="HeaderLogo" onclick="pageUp()">Тугоплавкие Металлы</a>
+		<nav class="HeaderNav">
+			<a class="NavA" href="Page_tungsten [0].html">Вольфрам</a>
+			<a class="NavA" href="Page_rhenium [1].html">Рений</a>
+			<a class="NavA" href="Page_tantalum [2].html">Тантал</a>
+			<a class="NavA" href="Page_molybdenum [3].html">Молибден</a>
+			<a class="NavA" href="Page_niobium [4].html">Ниобий</a>
+			<a class="NavA" href="Page_hafnium [5].html">Гафний</a>
+			<a class="NavA" href="Page_zirconium [6].html">Цирконий</a>
+			<a class="NavA" href="Page_chromium [7].html">Хром</a>
+			<a class="NavA" href="Page_titan [8].html">Титан</a>
+		</nav>
+	</div>
+
+	<h1>Напишите нам своё предложение.</h1>
+	<form>
+		<p>Ваше имя</p>
+		<input type="text">
+
+		<p>Ваша почта(Если хотите получить ответ)</p>
+		<input type="text">
+
+		<p>Выберите тип обращения</p>
+		<select name="typeOfTheMessage">
+			<option value="Предложение"></option>
+			<option value="Жалоба"></option>
+			<option value="Баг"></option>
+		</select>
+
+		<p>*Вы подписаны на наши обновления?</p>
+		<input type="checkbox">
+		<br>
+		<button class="ButtonFooter">Отправить</button>
+	</form>
+
+	<footer>
+		<div class="Email">
+			<h5>Хотите получать новости об обновлениях?</h5>
+			<input id="EmailInput" placeholder="Введите email" type="text" class="EmailInput"> 
+			<button id="EmailButton" class="ButtonFooter" onclick="pretendingOfSanding('EmailButton', 'EmailInput')">Отправить</button>
+		</div>
+	</footer>
+	<script src="JS.js"></script>
+</body>
+
+</html>

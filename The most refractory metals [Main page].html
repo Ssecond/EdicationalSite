@@ -1,0 +1,107 @@
+﻿<DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Самые тугоплавкие металлы</title>
+	<link href="Style.css" rel="stylesheet" type="text/css"> </head>
+
+<body>
+	<!-- Главное меню (Вверняя часть страницы) -->
+	<div class="Header">
+		<a class="HeaderLogo" onclick="pageUp()">Тугоплавкие Металлы</a>
+		<nav class="HeaderNav">
+			<a class="NavA" href="Page_tungsten [0].html">Вольфрам</a>
+			<a class="NavA" href="Page_rhenium [1].html">Рений</a>
+			<a class="NavA" href="Page_tantalum [2].html">Тантал</a>
+			<a class="NavA" href="Page_molybdenum [3].html">Молибден</a>
+			<a class="NavA" href="Page_niobium [4].html">Ниобий</a>
+			<a class="NavA" href="Page_hafnium [5].html">Гафний</a>
+			<a class="NavA" href="Page_zirconium [6].html">Цирконий</a>
+			<a class="NavA" href="Page_chromium [7].html">Хром</a>
+			<a class="NavA" href="Page_titan [8].html">Титан</a>
+		</nav>
+	</div>
+	<!-- Карта ссылок (Элементы таблицы менделеева) -->
+	<map name="Elements">
+		<area href="Page_titan [8].html" shape="rect" coords="1,2,121,120">
+		<area href="Page_zirconium [6].html" shape="rect" coords="125,2,245,120">
+		<area href="Page_chromium [7].html" shape="rect" coords="249,2,369,120">
+		<area href="Page_hafnium [5].html" shape="rect" coords="373,2,492,120">
+		<area href="Page_niobium [4].html" shape="rect" coords="495,2,617,120">
+		<area href="Page_molybdenum [3].html" shape="rect" coords="620,2,740,120">
+		<area href="Page_tantalum [2].html" shape="rect" coords="743,2,863,120">
+		<area href="Page_rhenium [1].html" shape="rect" coords="868,2,988,120">
+		<area href="Page_tungsten [0].html" shape="rect" coords="992,2,1112,120"> 
+	</map>
+	<div id="MapOne"><img id="ElementsThumbNail" src="Pictures/Elements/Periodic.png" usemap="#Elements"></div>
+	<div id="MainPicture">
+		<!-- Табличка -->
+		<h1 id="MainTegLine">Девять самых тугоплавких металлов</h1>
+		<table id="Table">
+			<tr>
+				<td>Элемент</td>
+				<td>Теплопроводность Вт/(м·К)</td>
+				<td>Удельная теплота плавления кДж/моль</td>
+				<td>Температура плавления °C</td>
+				<tr>
+				<td>Титан</td>
+				<td>21,9</td>
+				<td>18,8</td>
+				<td>1670</td>
+				<tr>
+				<td>Цирконий</td>
+				<td>22,7</td>
+				<td>19,2</td>
+				<td>1851,85</td>
+				<tr>
+				<td>Хром</td>
+				<td>93,9</td>
+				<td>21</td>
+				<td>1856,9</td>
+				<tr>
+				<td>Гафний</td>
+				<td>23,0</td>
+				<td>25,1</td>
+				<td>2233</td>
+				<tr>
+				<td>Ниобий</td>
+				<td>53,7</td>
+				<td>26,8</td>
+				<td>2468</td>
+				<tr>
+				<td>Молибден</td>
+				<td>138</td>
+				<td>28</td>
+				<td>2623</td>
+				<tr>
+				<td>Тантал</td>
+				<td>57,5</td>
+				<td>24,7</td>
+				<td>3017</td>
+				<tr>
+				<td>Рений</td>
+				<td>48,0</td>
+				<td>34</td>
+				<td>3186</td>
+				<tr>
+				<td>Вольфрам</td>
+				<td>162,8</td>
+				<td>285,3</td>
+				<td>3422</td>
+		</table>
+	</div>
+	<div id="Video">
+		<iframe width="1280" height="720" src="https://www.youtube.com/embed/fIOnj8wLvIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="MainVideo"></iframe>
+	</div>
+	<footer>
+		<div class="Email">
+			<h5>Хотите получать новости об обновлениях?</h5>
+			<input id="EmailInput" placeholder="Введите email" type="text" class="EmailInput"> 
+			<button id="EmailButton" class="ButtonFooter" onclick="pretendingOfSanding('EmailButton', 'EmailInput')">Отправить</button>
+		</div>
+	</footer>
+	<script src="JS.js"></script>
+</body>
+
+</html>
